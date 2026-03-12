@@ -1,0 +1,11 @@
+media 100baseTX description Uplink
+inet 10.0.1.12 255.255.255.0 10.0.1.255
+inet alias 10.0.1.13 255.255.255.255 10.0.1.13
+inet alias 10.0.1.14 255.255.255.255 NONE
+inet alias 10.0.1.15 255.255.255.255
+inet alias 10.0.1.16 0xffffffff
+# This is an example comment line.
+inet6 alias fec0::1 64
+inet6 alias fec0::2 64 anycast
+!route add 65.65.65.65 10.0.1.13
+up
