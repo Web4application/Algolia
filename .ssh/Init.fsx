@@ -1,4 +1,4 @@
-/* -lutil */
+/* -lutil */ 
 #include <util.h>
 
 int
