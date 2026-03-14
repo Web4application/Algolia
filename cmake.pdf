@@ -1,4 +1,4 @@
-CC=bcc32
+CC=bcc32 
 PREFIX=/usr/local
 
 LIBNAME=libhpdf.lib
