@@ -1,0 +1,33 @@
+@media print {
+    /* Define the 'Odd' Page Size */
+    @page {
+        size: A4 portrait;
+        margin: 20mm; /* Large margins for a 'template' look */
+    }
+
+    /* Hide UI elements you DON'T want in the PDF (Taskbar, Buttons) */
+    .taskbar, .window-controls, .system-menu {
+        display: none !important;
+    }
+
+    /* Force the 'Landing' to look like a Document Template */
+    .landing-page {
+        display: block !important;
+        width: 100%;
+        border: 2px solid #000; /* Firm border for the template */
+        padding: 40px;
+        background: white !important;
+        color: black !important;
+        font-family: "Courier New", Courier, monospace; /* 'Firm' typewriter style */
+    }
+
+    /* Create a 'Firm' Header/Footer for the template */
+    .landing-page::before {
+        content: "WEBOS-SYSTEM-REPORT / REF: 001-X";
+        display: block;
+        text-align: right;
+        font-weight: bold;
+        border-bottom: 2px solid #000;
+        margin-bottom: 20px;
+    }
+}
