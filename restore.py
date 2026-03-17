@@ -1,5 +1,6 @@
 from pypdf import PdfReader, PdfWriter
 
+    
 reader = PdfReader("Seige_of_Vicksburg_Sample_OCR.pdf")
 writer = PdfWriter()
 
