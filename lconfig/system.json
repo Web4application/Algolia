@@ -11,3 +11,38 @@
     "memory_usage": "14%"
   }
 }
+{
+  "system": {
+    "hostname": "WEB4-NODE-01",
+    "version": "1.0.0-ALPHA",
+    "kernel": "WebOS-Core-v1",
+    "protocol": "Web4-v1",
+    "uptime": "1042ms"
+  },
+  "ai_agent_manager": {
+    "status": "LISTENING",
+    "active_model": "GENESIS-LLM-01",
+    "memory_layer": "SYNAPTIC-V2",
+    "event_bus": "ACTIVE",
+    "neural_load": "14.2%"
+  },
+  "security": {
+    "sandbox_engine": "IFRAME-V3",
+    "runtime": "WASM-RUN-04",
+    "encryption": "AES-256-GCM"
+  },
+  "network": {
+    "identity": "BLOCKCHAIN-ID-7721",
+    "gateway": "DECENTRALIZED-MESH",
+    "web4_services": [
+      "IDENTITY",
+      "STORAGE",
+      "ORACLE"
+    ]
+  },
+  "hardware_emulation": {
+    "camera_access": "RESTRICTED",
+    "filesystem": "INDEXED-DB",
+    "network_stack": "WEB-RTC"
+  }
+}
