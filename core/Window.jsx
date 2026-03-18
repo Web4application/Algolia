@@ -51,7 +51,39 @@ export default function Window({ data }) {
       {/* Content */}
       <div style={{ padding: "10px" }}>
         {data.content}
+        <div
+  onMouseDown={handleResizeMouseDown}
+  style={{
+    position: "absolute",
+    bottom: 0,
+    right: 0,
+    width: "10px",
+    height: "10px",
+    cursor: "nwse-resize",
+    background: "#4ade80",
+  }}
+/>
       </div>
     </div>
   );
 }
+const [resizing, setResizing] = useState(false);
+
+const handleResizeMouseDown = () => {
+  setResizing(true);
+};
+
+const handleMouseMove = (e) => {
+  if (dragging) {
+    updatePosition(data.id, e.clientX - 100, e.clientY - 20);
+  }
+
+  if (resizing) {
+    updateSize(data.id, e.clientX - data.x, e.clientY - data.y);
+  }
+};
+
+const handleMouseUp = () => {
+  setDragging(false);
+  setResizing(false);
+};
