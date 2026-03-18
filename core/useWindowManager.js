@@ -51,3 +51,10 @@ export default function useWindowManager() {
     updatePosition,
   };
 }
+const updateSize = (id, width, height) => {
+  setWindows((prev) =>
+    prev.map((w) =>
+      w.id === id ? { ...w, width, height } : w
+    )
+  );
+};
