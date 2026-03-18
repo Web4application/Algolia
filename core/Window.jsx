@@ -87,3 +87,5 @@ const handleMouseUp = () => {
   setDragging(false);
   setResizing(false);
 };
+<button onClick={() => toggleMinimize(data.id)}>-</button>
+<button onClick={() => toggleMaximize(data.id)}>⬜</button>
